@@ -51,7 +51,7 @@ SET DataCriacao	 = DATE_ADD(DataCriacao, INTERVAL 10 YEAR)
 WHERE YEAR(DataCriacao) >= 1900 AND YEAR(DataCriacao) <= 2000;
 
 -- A uma orquestra entrou de férias 
--- Esse código só vai funcionar se o ALTER para adicionar Status na tabela músico já foi implementado
+-- Esse código só vai funcionar se o ALTER (script 2) para adicionar Status na tabela músico já foi implementado
 UPDATE Musicos 
 SET Status = 'Inativo' 
 WHERE Orquestra_idOrquestra = 22;

@@ -21,7 +21,7 @@ DROP VIEW IF EXISTS `v_sinfoniasmaestroalgumaexecucao`;
 -- -----------------------------------------------------
 DROP TABLE IF EXISTS `MusicosFuncaoSinfonia`;
 DROP TABLE IF EXISTS `MusicosInstrumentos`;
-DROP TABLE IF EXISTS `HabilidadeMusical`; -- Adicionado caso você tenha renomeado a tabela
+DROP TABLE IF EXISTS `HabilidadeMusical`; -- Adicionado para caso tenha renomeado
 DROP TABLE IF EXISTS `Instrumentos`;
 DROP TABLE IF EXISTS `Funcao`;
 DROP TABLE IF EXISTS `Sinfonia`;

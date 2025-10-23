@@ -20,13 +20,13 @@ TO `Escola_de_Musica_do_Recife`.`HabilidadeMusical`;
 ALTER TABLE `Escola_de_Musica_do_Recife`.`Instrumentos` 
 DROP COLUMN `Fabricante`;
 
--- Script 06: Adiciona uma constraint UNIQUE para Nome e DataNascimento em Musicos
+-- Script 06: Adiciona um UNIQUE para Nome e DataNascimento em Musicos
 ALTER TABLE `Escola_de_Musica_do_Recife`.`Musicos` 
 ADD UNIQUE (`Nome`, `DataNascimento`);
 
--- Script 07: Altera a coluna NivelProeficiencia na tabela HabilidadeMusical (antiga MusicosInstrumentos)
-ALTER TABLE `Escola_de_Musica_do_Recife`.`HabilidadeMusical` 
-CHANGE COLUMN `NivelProeficiencia` `NivelProficiencia` ENUM('Iniciante', 'Intermediário', 'Avançado') NOT NULL;
+-- Script 07: Adiciona um valor padrão 'Brasileira' para a coluna Nacionalidade
+ALTER TABLE `Escola_de_Musica_do_Recife`.`Musicos`
+MODIFY COLUMN `Nacionalidade` VARCHAR(100) NOT NULL DEFAULT 'Brasileira';
 
 -- Script 08: Adiciona a coluna NacionalidadeSinfonia na tabela Sinfonia
 ALTER TABLE `Escola_de_Musica_do_Recife`.`Sinfonia` 
