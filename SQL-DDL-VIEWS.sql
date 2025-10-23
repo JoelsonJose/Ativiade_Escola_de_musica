@@ -150,9 +150,9 @@ INNER JOIN
 WHERE
     mi.NivelProeficiencia = 'Alto';
 
--- -----------------------------------------------------
+
 -- View 10: Relatório de quantos músicos cada orquestra possui
--- -----------------------------------------------------
+
 CREATE OR REPLACE VIEW V_quantosMusicosCadaOrquestra AS
 SELECT
     orq.Nome 'Nome da Orquestra',
